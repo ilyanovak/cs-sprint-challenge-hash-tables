@@ -1,8 +1,12 @@
 def has_negatives(a):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
+
+    a_dict = { a[i] : 0 for i in range(0, len(a) ) }
+
+    result = []
+
+    for key in a_dict:
+        if key > 0 and key * -1 in a_dict:
+            result.append(key)
 
     return result
 

@@ -1,12 +1,14 @@
-# Your code here
-
 
 
 def finder(files, queries):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
+
+    queriesDict = {query: None for query in queries}
+    filesDict = {file: None for file in files}
+    result = []
+
+    for file in filesDict:
+        if file.split("/")[-1] in queriesDict:
+            result.append(file)
 
     return result
 
